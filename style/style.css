@@ -12,11 +12,11 @@ body
     margin: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
-    background: var(--Dark-cyan);
+    /*background: var(--Dark-cyan);*/
 }
 .profile-card
 {
-    border-radius: 0px;
+    border-radius: 8px;
     width: 85%;
     margin: 0 auto;
 }
@@ -33,5 +33,17 @@ body
 {
     display: flex;
     justify-content: space-around;
+    border-top: 1px solid var(--Dark-grayish-blue);
 }
-.profile-card-bottom_datos-seguidores div 
+.profile-card-bottom_datos-seguidores div p:nth-child(1)
+{
+    font-size: var(--Name-stats-Font-size);
+    font-weight: 700;
+    text-align: center;
+}
+.profile-card-bottom_datos-seguidores div p:nth-child(2){
+    font-weight: 400;
+    color: var(--Dark-gray);
+    font-size: 14px ;
+    text-align: center;
+}
